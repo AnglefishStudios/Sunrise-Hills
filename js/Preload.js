@@ -21,6 +21,7 @@ SunriseHills.Preload.prototype = {
     this.load.image('info', 'assets/images/info.png');
     this.load.image('inventoryframe','assets/images/inventoryframe.png');
     this.load.image('bakery', 'assets/images/Bakery_smalltown.png');
+    this.load.image('theatre', 'assets/images/theatre_smalltown.png');
 
     this.load.spritesheet('power', 'assets/images/power.png', 12, 12);
 
