@@ -36,7 +36,8 @@ SunriseHills.Game.prototype = {
     this.game.add.button( 310, 1100, 'caroline', droptest, this,0,1,2,3 );
 
     this.game.add.image(0,0, 'inventoryframe');
-
+    //adding bakery
+    this.bakery = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'bakery');
     //create player
     this.player = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'caroline');
     this.player.scale.setTo(2);
@@ -132,8 +133,8 @@ SunriseHills.Game.prototype = {
       {name:'chicken',x:270, y:1650, buy:20, sell:10, location:'map', image:'consumables', tiles:[10,10,10,10,10,34,10,33,10,], desc:'Which came first?!? THIS GUY!!!' },
       {name:'coffee',x:900, y:200, buy:15, sell:8, location:'map', image:'consumables', tiles:[3], desc:'Coffeecoffeecoffeecoff-' },
       {name:'egg',x:570, y:2000, buy:10, sell:5, location:'map', image:'consumables', tiles:[2], desc:'Which came first?!? not this guy :-( !!!' },
-      {name:'choclate egg',x:570, y:2000, buy:10, sell:5, location:'inventory', image:'consumables', tiles:[2], desc:'Which came first?!? not this guy :-( !!!' }
-
+      {name:'choclate egg',x:570, y:2000, buy:10, sell:5, location:'inventory', image:'consumables', tiles:[2], desc:'Which came first?!? not this guy :-( !!!' },
+      {name:'the bakery',x:900, y:200, buy:15, sell:8, location:'map', image:'bakery', tiles:[1], desc:'cookies-' }
     ];
     // inventory itemList
     this.inventory = this.game.add.group();
