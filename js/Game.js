@@ -40,9 +40,7 @@ SunriseHills.Game.prototype = {
     this.bakery = this.game.add.image(this.game.world.centerX, this.game.world.centerY, 'bakery');
     this.bakery.scale.setTo(.5,.5);
     //adding theatre
-    console.log("hi there");
-    console.log("the middle:"+ this.game.world.centerX +" , "+ this.game.world.centerY);
-    this.theatre = this.game.add.image(this.game.world.centerX - 600, this.game.world.centerY, 'theatre');
+    this.theatre = this.game.add.image(2175, 1527, 'theatre');
     this.theatre.scale.setTo(.5,.5);
 
     //create player
